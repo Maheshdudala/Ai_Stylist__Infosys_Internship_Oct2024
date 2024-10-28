@@ -7,7 +7,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 
-df = pd.read_csv('your_dataset.csv')
+df = pd.read_csv('dataset.csv')
 
 numerical_features = df.select_dtypes(include=['int64', 'float64']).columns
 categorical_features = df.select_dtypes(include=['object']).columns
